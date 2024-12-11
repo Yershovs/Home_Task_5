@@ -39,7 +39,7 @@ template <typename T>
 void parallelMergeSort(vector<T>& A, int start, int end, vector<T>& temp, int depth = 0) {
     int N = end - start;
     if (N <= 1000) { // Для небольших массивов используем std::sort
-        std::sort(A.begin() + start, A.begin() + end);
+        sort(A.begin() + start, A.begin() + end);
         return;
     }
 
@@ -100,7 +100,7 @@ int main() {
 
     // Сортировка с использованием std::sort
     auto start_1 = chrono::high_resolution_clock::now();
-    std::sort(vector_2.begin(), vector_2.end());
+    sort(vector_2.begin(), vector_2.end());
     auto end_1 = chrono::high_resolution_clock::now();
     chrono::duration<double> elapsed_1 = end_1 - start_1;
 
@@ -133,7 +133,7 @@ int main() {
 
     // Сортировка связных списков с использованием std::sort
     auto start_list_std = chrono::high_resolution_clock::now();
-    std::sort(linkedListsCopy.begin(), linkedListsCopy.end(), [](ListNode* a, ListNode* b) { return *a < *b; });
+    sort(linkedListsCopy.begin(), linkedListsCopy.end(), [](ListNode* a, ListNode* b) { return *a < *b; });
     auto end_list_std = chrono::high_resolution_clock::now();
     chrono::duration<double> elapsed_list_std = end_list_std - start_list_std;
 
