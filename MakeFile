@@ -1,0 +1,16 @@
+CXX = g++
+CXXFLAGS = -Wall -fopenmp
+LDFLAGS = -fopenmp
+TARGET = a
+OBJ = Home_Task_5.o
+
+all: $(TARGET)
+
+$(TARGET): $(OBJ)
+	$(CXX) $(OBJ) $(LDFLAGS) -o $(TARGET)
+
+Home_Task_5.o: Home_Task_5.cpp
+	$(CXX) $(CXXFLAGS) -c Home_Task_5.cpp
+
+clean:
+	rm -f $(OBJ) $(TARGET)
