@@ -119,8 +119,8 @@ int main() {
         linkedLists.push_back(head);
     }
 
-  // Копия для std::sort
-  linkedListsCopy = linkedLists;
+    // Копия для std::sort
+    linkedListsCopy = linkedLists;
 
     // Параллельная сортировка связных списков
     auto start_list = chrono::high_resolution_clock::now();
