@@ -41,7 +41,7 @@ struct ListNode {
   // Настройка генератора случайных чисел
     std::random_device rd;  // Источник случайности
     std::mt19937 gen(rd()); // Генератор Mersenne Twister
-    std::uniform_int_distribution<> dist(1, 1000000); // Диапазон [10, 50]
+    std::uniform_int_distribution<> dist(1, 1000000); // Диапазон 
 
 int generate(void){
     // Генерация случайного числа
