@@ -1,6 +1,5 @@
 #include<iostream>
 #include <random>
-// #include <cstdlib> // Для setenv
 struct ListNode {
     int value;
     ListNode* next;
