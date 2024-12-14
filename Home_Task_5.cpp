@@ -3,7 +3,6 @@
 #include <algorithm>
 #include <chrono> // Для измерения времени
 #include <omp.h> // Для работы с OpenMP
-#include <cstdlib> // Для setenv
 #include "My_Structurs.h"
 using namespace std;
 
